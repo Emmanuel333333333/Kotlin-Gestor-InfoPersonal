@@ -1,85 +1,140 @@
 # 👨‍💻 Proyecto Kotlin - Gestor de Información Personal
 **Autor:** Emmanuel Galeano Martínez
 
+**Programa de Formación:** Análisis y Desarrollo de Software – SENA
+
+**Ficha:** ADSO 3144585
+
 ---
 
 ## 📋 Descripción
 
-Este proyecto es una **aplicación de consola escrita en Kotlin** que permite registrar, validar y analizar información personal de varios usuarios. Se desarrollo como práctica para reforzar el uso de:
+Este proyecto es una **aplicación de consola escrita en Kotlin** que permite registrar, validar y analizar información personal de varios usuarios. Cumple con los siguientes objetivos:
 
 - Variables y constantes
 - Tipos de datos
 - Operadores aritméticos, lógicos y relacionales
 - Validaciones y manipulación de cadenas
-- Estructuras básicas del lenguaje Kotlin
+- Organización modular del código con funciones
 
 ---
 
-## 🛠️ Funcionalidades
+## ✅ Requisitos del Proyecto
 
-- ✅ Registro de al menos **3 usuarios**
-- ✅ Validación de:
-    - Edad (> 0)
-    - Altura y peso (> 0)
-    - Email válido (contiene `@` y `.`)
-- ✅ Cálculo del **IMC** (Índice de Masa Corporal)
-- ✅ Detección de **mayoría de edad**
-- ✅ Manipulación de cadenas:
-    - Nombre en mayúsculas y minúsculas
-    - Extracción del dominio del email
-    - Generación de un resumen con string templates
+✅ Cumplimiento de Requisitos del Proyecto
+Este proyecto cumple con todos los requerimientos establecidos, demostrando un uso adecuado de variables, operadores, validaciones y manipulación de cadenas en Kotlin.
+
+---
+
+### 📌 1. Registro de Usuarios
+✅ Registro manual de 3 usuarios.
+
+✅ Se solicitan por consola los siguientes datos:
+
+Nombre completo (texto)
+
+Edad (entero)
+
+Altura en metros (decimal)
+
+Peso en kilogramos (decimal)
+
+Email (texto)
+
+Ciudad de residencia (texto)
+
+---
+
+### 🛡️ 2. Manejo y Validación de Datos
+✅ Edad validada: debe ser mayor a 0.
+
+✅ Altura y peso validados: deben ser mayores a 0.
+
+✅ Email validado:
+
+Debe contener un @
+
+Y un . después del @
+
+El usuario puede intentar 3 veces hasta que el email sea válido.
+
+---
+
+### 🧮 3. Operaciones con Datos
+✅ Cálculo del IMC con la fórmula correcta:
+IMC = peso / (altura * altura)
+
+✅ Determina si el usuario es mayor de edad (edad >= 18)
+
+---
+
+### ✂️ 4. Manipulación de Cadenas
+✅ El nombre se muestra:
+
+En MAYÚSCULAS
+
+En minúsculas
+
+✅ Se extrae correctamente el dominio del email
+
+✅ Se genera un resumen detallado por usuario usando:
+
+String templates
+
+Cadenas multilínea ("""...""")
+
+---
+
+### ⚙️ 5. Uso de Operadores
+✅ Aritméticos: para cálculo del IMC.
+
+✅ Relacionales y lógicos: usados en todas las validaciones de datos.
+
+---
+
+### 🖥️ 6. Interacción y Presentación
+✅ Presentación clara en consola:
+
+Títulos organizados (===, --- Usuario X ---)
+
+Saltos de línea y separación visual
+
+(----------------------------)
+
+Información fácil de leer para cada usuario
+
+---
+
+### 🧠 7. Organización del Código
+
+✅ Código estructurado y modular:
+
+- `crearUsuario()` para registrar cada usuario
+
+- `mostrarDatos()`: para mostrar resumen con cálculos
+
+- `esEmailValido()` para validar el email
 
 ---
 
 ## 🚀 Cómo ejecutar el proyecto
 
-1. Abre el proyecto en el editor de codigo **IntelliJ IDEA**.
-2. Ejecuta el archivo `main.kt`.
-3. Ingresa los datos solicitados por consola.
-4. Observa los resultados al final del registro.
+1. Abre el proyecto en **IntelliJ IDEA** o cualquier editor compatible con Kotlin.
+2. Asegúrate de tener instalado el SDK de Kotlin.
+3. Ejecuta el archivo `main.kt` que está dentro de la carpeta `src/`.
+4. Ingresa los datos de cada usuario que solicita la consola.
+5. Al finalizar, vas a ver un resumen completo de la información procesada.
 
 ---
 
 ## 💻 Ejemplo de Ejecución
 
 ### 📝 Registro de usuarios
-Click en la imagen para abrirla (CTRL + CLICK)
-
 ![Registro de usuarios](img.png)
 
 ---
 
 ### 📊 Información de usuarios
-Click en la imagen para abrirla (CTRL + CLICk)
-
 ![Resultados](img_1.png)
 
 ---
-
-## 📁 Estructura del proyecto
-
-Gestor De Informacion Personal en Kotlin/
-├── src/
-│ ├── main.kt
-│ └── User.kt
-├── README.md
-├── img.png
-└── img_1.png
-
----
-
-## 🌐 Repositorio GitHub
-
-Este proyecto fue subido al repositorio público:  
-👉 [https://github.com/EmmanuelGaleano/Kotlin-Gestor-InfoPersonal](https://github.com/EmmanuelGaleano/Kotlin-Gestor-InfoPersonal) *(reemplazar con tu URL real)*
-
----
-
-## 📌 Créditos
-
-Desarrollado por **Emmanuel Galeano Martínez**  
-Programa de Formación: **Análisis y Desarrollo de Software – SENA**
-Ficha: ADSO 3144585
-
----
-
